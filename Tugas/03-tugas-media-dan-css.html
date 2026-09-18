@@ -1,23 +1,87 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Pemutar Media Kuliah Responsif</title>
+
     <link rel="stylesheet" href="03-tugas-style.css">
 </head>
+
 <body>
 
     <main>
         <article class="media-card">
-            <h1 class="media-card__title">Materi Kuliah Informatika</h1>
+
+            <h1 class="media-card__title">
+                Materi Kuliah Informatika
+            </h1>
 
             <p class="media-card__description">
                 Media pembelajaran untuk membantu mahasiswa memahami
                 materi perkuliahan melalui video dan audio.
             </p>
+
+            <picture>
+                <source
+                    media="(max-width: 767px)"
+                    srcset="sampul-mobile.webp"
+                    type="image/webp">
+
+                <source
+                    media="(min-width: 768px)"
+                    srcset="sampul-desktop.webp"
+                    type="image/webp">
+
+                <img
+                    src="sampul-desktop.webp"
+                    alt="Ilustrasi media dan teknologi">
+            </picture>
+
+            <h2 class="media-card__subtitle">
+                Video Materi Kuliah
+            </h2>
+
+            <video
+                class="media-card__video"
+                controls
+                poster="sampul-desktop.webp">
+
+                <source
+                    src="materi-kuliah.mp4"
+                    type="video/mp4">
+
+                <source
+                    src="materi-kuliah.webm"
+                    type="video/webm">
+
+                Browser Anda tidak mendukung pemutar video.
+            </video>
+
+            <h2 class="media-card__subtitle">
+                Audio Materi Kuliah
+            </h2>
+
+            <audio
+                class="media-card__audio"
+                controls>
+
+                <source
+                    src="materi-kuliah.mp3"
+                    type="audio/mpeg">
+
+                <source
+                    src="materi-kuliah.ogg"
+                    type="audio/ogg">
+
+                Browser Anda tidak mendukung pemutar audio.
+            </audio>
+
         </article>
     </main>
 
 </body>
+
 </html>
