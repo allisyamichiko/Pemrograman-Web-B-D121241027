@@ -128,10 +128,21 @@ body {
 }
 
 
-/*ARTICLE CARD*/
+/*ARTICLE MICRO-GRID*/
+
+.article-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1rem;
+}
+
+.article-list > h2 {
+    grid-column: 1 / -1;
+    margin-bottom: 0;
+}
 
 .article-list .card {
-    margin-bottom: 1rem;
+    height: 100%;
 }
 
 .article-list .card-title {
