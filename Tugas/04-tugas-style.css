@@ -173,10 +173,6 @@ body {
     text-align: center;
 }
 
-.site-footer p {
-    margin: 0;
-}
-
 
 /*LAYOUT TIGA KOLOM*/
 
@@ -192,7 +188,25 @@ body {
 }
 
 
-/*RESPONSIF NAVIGASI PONSEL*/
+/*LAYOUT TABLET*/
+
+@media (min-width: 577px) and (max-width: 991px) {
+
+    .journal-section {
+        display: grid;
+        grid-template-columns: 200px 1fr;
+        gap: 1.5rem;
+        align-items: start;
+    }
+
+    .right-sidebar {
+        display: none;
+    }
+
+}
+
+
+/*LAYOUT PONSEL*/
 
 @media (max-width: 576px) {
 
@@ -213,6 +227,22 @@ body {
 
     .navigation-list a {
         padding: 0.4rem 0;
+    }
+
+    .journal-section {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .sidebar,
+    .article-list,
+    .right-sidebar {
+        width: 100%;
+    }
+
+    .right-sidebar {
+        display: block;
     }
 
 }
