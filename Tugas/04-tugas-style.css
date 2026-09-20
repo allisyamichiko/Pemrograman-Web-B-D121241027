@@ -178,6 +178,20 @@ body {
 }
 
 
+/*LAYOUT TIGA KOLOM*/
+
+@media (min-width: 992px) {
+
+    .journal-section {
+        display: grid;
+        grid-template-columns: 200px 1fr 220px;
+        gap: 1.5rem;
+        align-items: start;
+    }
+
+}
+
+
 /*RESPONSIF NAVIGASI PONSEL*/
 
 @media (max-width: 576px) {
